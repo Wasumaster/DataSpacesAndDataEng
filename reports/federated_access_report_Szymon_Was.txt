@@ -1,0 +1,26 @@
+FEDERATED ACCESS REPORT
+Generated at: 2026-04-21 14:56:43.652738
+
+[REGISTERED PROVIDERS]
+satellite_A
+satellite_B
+ground_station
+
+[PROVIDER STATUS & CONTRACT]
+satellite_A: AVAILABLE / OK
+satellite_B: AVAILABLE / OK
+ground_station: AVAILABLE / OK
+
+[GLOBAL STATISTICS]
+Total observations: 6
+Distinct objects: 2
+
+[OBJECT ANALYSIS: OBJ-003]
+Total observations: 3
+
+[ACCESS LAYERS]
+REST RESULT: 6
+GRAPHQL RESULT: 6
+
+[COMPLETENESS]
+Federation complete: YES

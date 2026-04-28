@@ -1,0 +1,7 @@
+ACCESS LAYER COMPARISON
+
+1. Easiest to implement: REST (standard HTTP GET and JSON)[cite: 764, 765].
+2. Best for SQL-style analytical processing: DuckDB over HTTP[cite: 768, 769].
+3. Best for object-centric access: GraphQL (semantic unification)[cite: 772, 773].
+4. Highest architectural complexity: GraphQL (requires gateway and schema)[cite: 653, 654].
+5. Closest to data space/mesh access layer: GraphQL (unified semantic layer)[cite: 651, 654].
