@@ -1,0 +1,29 @@
+• Which components store the actual data?
+• Which component enables dataset discovery?
+• What advantages does the federated architecture provide?
+• What limitations might such a system have?
+
+ANSWERS REPORT:
+student@student-CZR-BUSINESS-1150:~/oods-systems$ ls -R
+.:
+backup            lab00_check.txt  metadata_catalog  providers
+data_summary.txt  lab1answers.txt  metadata.json     README.md
+
+./backup:
+satA_backup.csv
+
+./metadata_catalog:
+metadataA.json  metadataB.json  metadataG.json  metadata.json
+
+./providers:
+ground_station  satellite_A  satellite_B
+
+./providers/ground_station:
+metadata.json  observations.csv
+
+./providers/satellite_A:
+metadata.json  observations.csv
+
+./providers/satellite_B:
+metadata.json  observations.csv
+

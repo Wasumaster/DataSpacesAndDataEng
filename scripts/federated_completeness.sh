@@ -1,0 +1,2 @@
+#!/bin/bash
+duckdb -c "WITH full_c AS (SELECT COUNT(*) as total FROM read_csv_auto('providers/*/observations.csv', header=False)), fed_c AS (SELECT COUNT(*) as total FROM read_csv_auto(['providers/satellite_A/observations.csv','providers/satellite_B/observations.csv'], header=False)) SELECT CASE WHEN full_c.total = fed_c.total THEN 'FEDERATED RESULT: COMPLETE' ELSE 'FEDERATED RESULT: INCOMPLETE' END FROM full_c, fed_c;"

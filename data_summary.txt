@@ -1,0 +1,66 @@
+student@student-CZR-BUSINESS-1150:~/oods-systems$ ls providers | wc -l
+3
+
+student@student-CZR-BUSINESS-1150:~/oods-systems$ grep OBJ-002 providers/*/observations.csv | wc -l
+3
+
+student@student-CZR-BUSINESS-1150:~/oods-systems$ find providers/*/*
+providers/ground_station/observations.csv
+providers/satellite_A/observations.csv
+providers/satellite_B/observations.csv
+
+PRACTICE TASK: 
+student@student-CZR-BUSINESS-1150:~/oods-systems$ ls -R
+.:
+backup  data_summary.txt  metadata_catalog  providers
+
+./backup:
+satA_backup.csv
+
+./metadata_catalog:
+
+./providers:
+ground_station  satellite_A  satellite_B
+
+./providers/ground_station:
+observations.csv
+
+./providers/satellite_A:
+observations.csv
+
+./providers/satellite_B:
+observations.csv
+student@student-CZR-BUSINESS-1150:~/oods-systems$ grep OBJ-003 providers/*/observations.csv
+providers/ground_station/observations.csv:2026-03-01T12:10:00,OBJ-003,15.1,7.5
+providers/satellite_A/observations.csv:2026-03-01T12:10:00,OBJ-003,15.1,7.5
+providers/satellite_B/observations.csv:2026-03-01T12:10:00,OBJ-003,15.1,7.5
+student@student-CZR-BUSINESS-1150:~/oods-systems$ wc -l providers/*/observations.csv
+  3 providers/ground_station/observations.csv
+  3 providers/satellite_A/observations.csv
+  3 providers/satellite_B/observations.csv
+  9 total
+student@student-CZR-BUSINESS-1150:~/oods-systems$ 
+
+
+student@student-CZR-BUSINESS-1150:~/oods-systems$ echo "2025-03-01T12:00:00,OBJ-421,15.3,7.4
+2025-03-01T12:05:00,OBJ-202,14.9,7.2
+2025-03-01T12:10:00,OBJ-067,15.8,7.9" > providers/ground_station/observations.csv
+student@student-CZR-BUSINESS-1150:~/oods-systems$ 
+
+student@student-CZR-BUSINESS-1150:~/oods-systems$ echo "2025-03-01T12:00:00,OBJ-421,15.3,7.4
+2025-03-01T12:05:00,OBJ-202,14.9,7.2
+2025-03-01T12:10:00,OBJ-067,15.8,7.9" > providers/ground_station/observations.csv
+student@student-CZR-BUSINESS-1150:~/oods-systems$ ls -l providers/*
+providers/ground_station:
+total 4
+-rw-rw-r-- 1 student student 111 mar 17 14:03 observations.csv
+
+providers/satellite_A:
+total 4
+-rw-r--r-- 1 student student 117 mar 17 13:40 observations.csv
+
+providers/satellite_B:
+total 4
+-rw-rw-r-- 1 student student 117 mar 17 13:40 observations.csv
+student@student-CZR-BUSINESS-1150:~/oods-systems$ 
+
