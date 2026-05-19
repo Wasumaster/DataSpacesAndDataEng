@@ -1,0 +1,10 @@
+=== EO ASSET DOWNLOAD REPORT ===
+Product ID: S2A_MSIL2A_20240129T094241_N0510_R036_T34UDB_20240129T130753
+Total Attempted: 4
+Successfully Downloaded: 1
+Skipped/Failed: 3
+--------------------------------
+thumbnail: DOWNLOADED -> assets/thumbnails/thumbnail.jpg
+TCI_10m: SKIPPED (Non-HTTP protocol or auth required)
+B04_10m: SKIPPED (Non-HTTP protocol or auth required)
+B08_10m: SKIPPED (Non-HTTP protocol or auth required)

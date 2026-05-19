@@ -1,0 +1,32 @@
+FEDERATED OBSERVATION SELECTION REPORT
+======================================
+
+Sensors compared:
+- Sentinel-2 Optical
+- Sentinel-1 SAR
+
+Scenario-based sensor selection:
+--------------------------------
+Scenario: normal
+Recommended sensor: Sentinel-2 Optical
+Scores:
+ - Sentinel-2 Optical: 148.98
+ - Sentinel-1 SAR: 100.00
+
+Scenario: cloudy
+Recommended sensor: Sentinel-1 SAR
+Scores:
+ - Sentinel-2 Optical: 88.98
+ - Sentinel-1 SAR: 130.00
+
+Scenario: night
+Recommended sensor: Sentinel-1 SAR
+Scores:
+ - Sentinel-2 Optical: 40.00
+ - Sentinel-1 SAR: 130.00
+
+=== ENGINEERING INTERPRETATION ===
+1. Sentinel-2 (Optical) is heavily preferred for vegetation (NDVI) and visual interpretation under clear, daylight conditions.
+2. Sentinel-2 becomes unreliable under cloudy conditions and is completely blind during night-time passes (requires solar illumination).
+3. Sentinel-1 SAR (Synthetic Aperture Radar) is prioritized during cloudy weather and night operations because microwave pulses penetrate clouds and do not rely on the sun.
+4. Federated observation selection significantly improves mission robustness by guaranteeing continuous data flow regardless of local weather and planetary rotation.

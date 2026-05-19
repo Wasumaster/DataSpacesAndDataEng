@@ -1,0 +1,12 @@
+==================================================
+File: assets/visual/visual.jp2
+STATUS: File not found. Skipped.
+
+==================================================
+File: assets/bands/B04.jp2
+STATUS: File not found. Skipped.
+
+==================================================
+File: assets/bands/B08.jp2
+STATUS: File not found. Skipped.
+

@@ -1,0 +1,24 @@
+WATER DETECTION REPORT
+======================
+
+Detection rule:
+NDVI < 0
+
+Pixel statistics:
+Water candidate pixels: 883
+Non-water pixels: 89117
+Water candidate percentage: 0.98%
+
+Interpretation:
+Small number of low-NDVI areas detected.
+
+Potential explanations:
+- water surfaces
+- shadows
+- urban regions
+
+=== ENGINEERING INTERPRETATION ===
+1. NDVI < 0 may indicate water because water strongly absorbs near-infrared radiation.
+2. NDVI alone is insufficient for reliable water detection. Shadows, dense urban centers, and thick clouds can also yield negative NDVI.
+3. Additional bands (like Short-Wave Infrared - SWIR) and specialized indices (like NDWI - Normalized Difference Water Index) are required to separate water from shadows.
+4. Simple threshold-based products (like this one) are frequently used as rapid preprocessing steps to mask out irrelevant data before feeding images into heavy AI segmentation models.

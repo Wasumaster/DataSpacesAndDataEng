@@ -1,0 +1,8 @@
+==================================================
+Band: B04 | File: assets/bands/B04.jp2
+STATUS: File not found. Skipped.
+
+==================================================
+Band: B08 | File: assets/bands/B08.jp2
+STATUS: File not found. Skipped.
+

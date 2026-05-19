@@ -1,0 +1,25 @@
+TIME-SERIES NDVI MONITORING REPORT
+==================================
+
+2024-04-01
+Mean NDVI: 0.36
+
+2024-05-01
+Mean NDVI: 0.48
+
+2024-06-01
+Mean NDVI: 0.56
+
+Vegetation trend:
+-----------------
+First mean NDVI: 0.36
+Last mean NDVI: 0.56
+Change: +0.20
+Detected trend:
+Increasing vegetation activity
+
+=== ENGINEERING INTERPRETATION ===
+1. Increasing NDVI usually indicates a stronger vegetation response (e.g., spring/summer growth phase of crops or forests).
+2. Decreasing NDVI may indicate drought, disease, deforestation, harvest time, or seasonal leaf fall in autumn.
+3. Stable NDVI suggests limited temporal change (characteristic of dense evergreen forests, bare soil, or urban infrastructure).
+4. Time-series EO analysis provides significantly more information than a single observation because it captures dynamic ecosystem behaviors and enables proactive environmental monitoring.

@@ -1,0 +1,15 @@
+=== NDVI ANALYSIS REPORT ===
+Input file: results/ndvi/ndvi.npy
+Visualization: results/ndvi/ndvi_map.png
+
+NDVI MIN: -0.78
+NDVI MAX: 0.91
+NDVI MEAN: 0.35
+High vegetation pixels (NDVI > 0.5): 10080
+Low NDVI pixels (NDVI < 0): 883
+
+=== ENGINEERING INTERPRETATION ===
+1. Vegetated areas: Regions with high NDVI values (>0.5), mapped in green colors on the visualization.
+2. Non-vegetated areas: Regions with low or negative NDVI values, mapped in red/yellow colors.
+3. Low-NDVI areas: In real scenarios, these would represent water bodies, shadows, or urban surfaces. Here, they represent the lower end of our synthetic data.
+4. Cloud contamination: No direct cloud contamination can be confirmed because the input bands were synthetically generated for pipeline testing.

@@ -1,0 +1,36 @@
+MULTI-OBSERVATION NDVI COMPARISON
+=================================
+
+low_cloud_observation
+---------------------
+Cloud cover: 5%
+NDVI min: -0.65
+NDVI max: 0.90
+NDVI mean: 0.33
+High vegetation pixels: 9643
+Low NDVI pixels: 2631
+
+high_cloud_observation
+----------------------
+Cloud cover: 75%
+NDVI min: -0.60
+NDVI max: 0.88
+NDVI mean: 0.10
+High vegetation pixels: 2512
+Low NDVI pixels: 26324
+
+ENGINEERING COMPARISON
+----------------------
+The low-cloud observation provides a clearer and more useful NDVI result.
+The high-cloud observation is operationally less reliable because clouds
+reduce interpretability and may hide the real surface signal.
+
+Recommended observation:
+low_cloud_observation
+
+--- ANSWERS TO ENGINEERING QUESTIONS ---
+1. Which observation has better NDVI quality? Low-cloud observation.
+2. Which observation appears more affected by clouds? High-cloud observation.
+3. Which observation should be selected for operational monitoring? low_cloud_observation.
+4. Why is the high-cloud observation less reliable? Clouds are highly reflective in both Red and NIR bands, dragging the NDVI math towards zero and hiding the surface.
+5. Would this difference matter for AI-based vegetation classification? Yes. AI models trained on cloudy scenes will classify clouds instead of terrain, producing garbage outputs. Metadata filtering is strictly necessary.
